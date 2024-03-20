@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "UserDashBoard";
+}
+
+@Styles.Render("~/Content/DashBoard.css")
+
+<div class="dashboard-container">
+    <div id="leftPanelContainer">
+        <div id="categoriesContainer"></div>
+        <div id="agenciesContainer"></div>
+    </div>
+    <div id="newsFeedContainer"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Scripts/DashBoard.js"></script>

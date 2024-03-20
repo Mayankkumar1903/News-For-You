@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a63bf5ab7364dcdbb5924f42e1fd14b" Name="Diagram1">
+        <EntityTypeShape EntityType="NewsFeedDBModel.Agency" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NewsFeedDBModel.AgencyFeed" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="NewsFeedDBModel.Category" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="NewsFeedDBModel.News" Width="1.5" PointX="6" PointY="3.25" />
+        <EntityTypeShape EntityType="NewsFeedDBModel.User" Width="1.5" PointX="0.75" PointY="7.5" />
+        <AssociationConnector Association="NewsFeedDBModel.FK_Agency_Id" />
+        <AssociationConnector Association="NewsFeedDBModel.FK_News_Agency_Id" />
+        <AssociationConnector Association="NewsFeedDBModel.FK_Category_Id" />
+        <AssociationConnector Association="NewsFeedDBModel.FK_News_Category_Id" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

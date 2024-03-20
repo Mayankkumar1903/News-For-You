@@ -1,0 +1,152 @@
+﻿.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top:60px;
+}
+
+#leftPanelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    padding: 5px;
+    overflow-y: auto;
+    margin: 5px;
+}
+
+#newsFeedContainer {
+    background-color: white;
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    margin: 10px;
+}
+
+#categoriesContainer, #agenciesContainer {
+    background-color: #f8f9fa;
+    flex: 0 0 30%;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#categoriesContainer h2, #agenciesContainer h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.custom-checkbox-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.custom-checkbox-button:hover {
+    background-color: #d1d3d4;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: darkslategray;
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+    background-color: darkslategrey;
+    color: white;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.news-item {
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.news-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #d1d3d4;
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: darkslategray;
+    color: white;
+}
